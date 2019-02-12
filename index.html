@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>ArtBudy Portfolio</title>
+</head>
+<body>
+    <header>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        <nav>
+            <div class="ham-menu hide-desktop" id="menu">
+                <div class="change bar1"></div>
+                <div class="change bar2"></div>
+                <div class="change bar3"></div>
+            </div>
+            <div class="show-desktop hide-mobile" id="nav">
+                <a class="menu-btn" data-panelId="section1" href="#">home</a>
+                <a class="menu-btn" data-panelId="section2" href="#">skills</a>
+                <a class="menu-btn" data-panelId="section3" href="#">projects</a>
+                <a class="menu-btn" data-panelId="section4" href="#">contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="top-section" id="section1">
+            <div class="container">   
+                <div>
+                    <img src="images/photo-me-1.jpg" alt="Photo of me.">
+                    <h1 id="name">Arturas Budrikas</h1>
+                    <p>Web developer based in Ireland</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Artbudy">
+                        <img class="svg" src="images/iconmonstr-github-1.svg" alt="Github account"></a>
+                        <a href="https://www.linkedin.com/in/arturas-budrikas/">
+                        <img class="svg" src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn account"></a>
+                        <a href="mailto:arthurbud993@gmail.com?subject=job-offer">
+                        <img class="svg" src="images/iconmonstr-email-9.svg" alt="Email"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills" id="section2">
+            <div class="container">  
+                <div>
+                    <h3>Skills and tools</h3>
+                    <div class="slills-icons">
+                        <img class="svg" src="images/python.svg" alt="Python">
+                        <img class="svg" src="images/html.svg" alt="HTML5">
+                        <img class="svg" src="images/css-file-format-symbol.svg" alt="CSS3">
+                        <img class="svg" src="images/wordpress-logo-button.svg" alt="Wordpress">
+                        <img class="svg" src="images/python-file-symbol.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="section3">
+            <div class="container">  
+                <div>
+                    <h3>Projects</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus, incidunt esse dolore rerum, laboriosam ipsam sed asperiores a et..</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="section4">
+            <div class="container">
+                <div>
+                    <h3>Contacts</h3>
+                        <p>Email: arthurbud993@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Copyrights &copy; Arturas Budrikas 2019</p>
+        </div>
+    </footer>
+    <script src="script\nav-jquery.js"></script>
+</body>
+</html>
