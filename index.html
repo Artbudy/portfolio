@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script/contact-me.js"></script>
     <title>ArtBudy Portfolio</title>
 </head>
 <body>
@@ -19,8 +20,8 @@
             </div>
             <div class="show-desktop hide-mobile" id="nav">
                 <a class="menu-btn" data-panelId="section1" href="#">home</a>
-                <a class="menu-btn" data-panelId="section2" href="#">skills</a>
-                <a class="menu-btn" data-panelId="section3" href="#">projects</a>
+                <a class="menu-btn" data-panelId="section2" href="#">projects</a>
+                <a class="menu-btn" data-panelId="section3" href="#">skills</a>
                 <a class="menu-btn" data-panelId="section4" href="#">contact</a>
             </div>
         </nav>
@@ -31,7 +32,7 @@
                 <div>
                     <img src="images/photo-me-1.jpg" alt="Photo of me.">
                     <h1 id="name">Arturas Budrikas</h1>
-                    <p>Web developer based in Ireland</p>
+                    <p>Front-end UX developer based in Ireland</p>
                     <div class="social-links">
                         <a href="https://github.com/Artbudy">
                         <img class="svg" src="images/iconmonstr-github-1.svg" alt="Github account"></a>
@@ -41,43 +42,107 @@
                         <img class="svg" src="images/iconmonstr-email-9.svg" alt="Email"></a>
                     </div>
                 </div>
+                <a href="CV/CV Arturas Budrikas.pdf" download="Arturas-Budrikas-resume.pdf">
+                    <button class="resume">Resume</button>
+                </a>
             </div>
         </section>
         
-        <section class="skills" id="section2">
+        <section class="projects" id="section2">
+            <div class="container">  
+
+                <h3>Projects</h3>
+                <p>List of some of my projects.</p>
+                <div class="project-container">
+                    <div class="single-project">
+                        <div class="project-img">
+                            <img src="images/saugiklis.png" alt="arturokaminai.lt">
+                        </div>
+                        <div class="project-desc">
+                            <h4>Electrical installation website</h4>
+                            <p>Projects created in 2018 for electrical engineering company based in Lithuania. 
+                                Site 
+                            </p>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>Google analitics</li>
+                                <li>HTML</li>
+                                <li>CloudFlare</li>
+                            </ul>
+
+                            <a href="https://www.saugiklis.lt/"><button class="prj-btn">Visit</button></a>
+                        </div>
+                    </div>
+                    
+                    <div class="single-project">
+                        <div class="project-img">
+                            <img src="images/arturo-kaminai.png" alt="arturokaminai.lt">
+                        </div>
+                        <div class="project-desc">
+                            <h4>Chimney Liners store</h4>
+                            <p>One of my first projects created back in 2016 for chimney liner company based in Lithuania. 
+                                Site created on Wordpress and uses woo-commerce plugin. Site generates average of 2.5k visitors a month.
+                            </p>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>Woo-Commerce</li>
+                                <li>HTML</li>
+                                <li>Google analitics</li>
+                                <li>CloudFlare</li>
+                            </ul>
+
+                            <a href="https://www.arturokaminai.lt/kaminai/"><button class="prj-btn">Visit</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="skills" id="section3">
             <div class="container">  
                 <div>
                     <h3>Skills and tools</h3>
+                    <p>As CS Student I been introduced to wide range of technologies.
+                            Different technologies requires different tools and techniques to use them. 
+                        There is a list of main skills and tools I'm using and comfortable to work with.
+                    </p>
                     <div class="slills-icons">
-                        <img class="svg" src="images/python.svg" alt="Python">
-                        <img class="svg" src="images/html.svg" alt="HTML5">
-                        <img class="svg" src="images/css-file-format-symbol.svg" alt="CSS3">
-                        <img class="svg" src="images/wordpress-logo-button.svg" alt="Wordpress">
-                        <img class="svg" src="images/python-file-symbol.svg" alt="">
+                        <img class="skills-svg" src="images/python-file-symbol.svg" alt="Python">
+                        <img class="skills-svg" src="images/html5.svg" alt="HTML5">
+                        <img class="skills-svg" src="images/css-file-format-symbol.svg" alt="CSS3">
+                        <img class="skills-svg" src="images/wordpress-logo-button.svg" alt="Wordpress">
+                        <img class="skills-svg" src="images/Jquery-2.svg" alt="jquery">
+                        <img class="skills-svg" src="images/bootstrap_icon_291791.svg" alt="Bootstrap">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects" id="section3">
-            <div class="container">  
-                <div>
-                    <h3>Projects</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus, incidunt esse dolore rerum, laboriosam ipsam sed asperiores a et..</p>
-                </div>
-            </div>
-        </section>
+
         <section class="contacts" id="section4">
             <div class="container">
                 <div>
                     <h3>Contacts</h3>
-                        <p>Email: arthurbud993@gmail.com</p>
+                    <div id="jcf">
+                        <form action="" method="post" id="contact_form"> <select name="topic" id="topic" class="contact_topic">
+                            <option value="">Choose an option...</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            </select> <input class="contact_name" type="text" name="name" id="name" placeholder="Name"/> 
+                            <input class="contact_email" type="email" name="email" id="email" placeholder="Email" /> 
+                            <input class="contact_subject" type="text" name="subject" id="subject" placeholder="Subject" /> 
+                            <textarea class="contact_message" name="message" id="message" placeholder="Write your message..."></textarea> 
+                            <button class="submit" type="submit" id="send_message" style="height: 43px;">Send Message</button> 
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-footer">
             <p>Copyrights &copy; Arturas Budrikas 2019</p>
         </div>
     </footer>
