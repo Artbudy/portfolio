@@ -98,6 +98,10 @@ nav a:hover {
   transform: rotate(45deg) translate(-5px, -5px);
 }
 
+.active {
+  background-color: #830d0d;
+}
+
 section h1 {
   font-size: 3em;
   font-weight: bold;
@@ -105,6 +109,7 @@ section h1 {
 
 section h3 {
   font-size: 2em;
+  text-transform: uppercase;
 }
 section h3::after {
   content: "";
@@ -127,7 +132,8 @@ section h3::after {
 
 .top-section {
   height: calc(100vh + 5em);
-  background: #000;
+  background-image: url(../images/abstract-art-artistic-459642.jpg);
+  background-size: cover;
   color: #fff;
 }
 
@@ -154,9 +160,14 @@ section h3::after {
 }
 
 .skills {
-  height: calc(100vh - 2em);
+  height: 100%;
   background: #565a63;
   color: rgb(187, 186, 186);
+}
+
+.skills p {
+  margin-left: 0.8em;
+  text-align: left;
 }
 
 .skills-icons {
@@ -165,14 +176,9 @@ section h3::after {
 }
 
 .skills-svg {
-  fill: #000;
   height: 4em;
   width: 4em;
   margin: 1.5em 1em;
-}
-
-.skills-svg path {
-  fill: #000;
 }
 
 .resume {
@@ -216,7 +222,6 @@ section h3::after {
 }
 
 .project-img img {
-  width: 22em;
   max-width: 100%;
   height: auto;
   border: 1px solid #1a1a1a;
@@ -274,7 +279,9 @@ section h3::after {
 }
 
 .contacts {
-  height: calc(100vh + 5em);
+  display: flex;
+  justify-content: center;
+  height: 100%;
   background: #373a40;
   color: #fff;
 }
@@ -288,14 +295,16 @@ footer {
   text-align: center;
   padding: 1.5rem 0.7rem;
 }
-
+/* Contact form */
 #jcf * {
-  padding: 0;
-  margin: 0;
   font-size: 18px;
   box-sizing: border-box;
-  font-family: "Helvetica";
 }
+
+#honeypot {
+  display: none;
+}
+
 #jcf {
   max-width: 500px;
 }
@@ -315,7 +324,7 @@ footer {
 #jcf .success::placeholder {
   color: #044406;
 }
-#jcf .msg {
+#jcf .thankyou_message {
   display: none;
   padding: 10px;
   margin-bottom: 5px !important;
@@ -333,6 +342,11 @@ footer {
   margin: -18px -5px !important;
   width: 50px !important;
 }
+
+#jcf button:hover {
+  background: #345008;
+}
+
 #jcf select,
 #jcf input,
 #jcf textarea,
@@ -353,9 +367,156 @@ footer {
 }
 #jcf select:focus,
 #jcf input:focus,
-#jcf textarea:focus,
-#jcf button:hover {
-  border: solid 1px #0066ff;
+#jcf textarea:focus {
+  border: solid 1px #2e2e2e;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
   width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+  .top-section img {
+    height: 15em;
+    width: 15em;
+    margin-top: 3em;
+  }
+
+  section h1 {
+    font-size: 4em;
+  }
+
+  .subhead {
+    font-size: 1.4em;
+  }
+
+  section p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    padding: 4em .8em;
+  }
+
+  .svg {
+    margin: 1.5rem 2rem;
+  }
+
+  .projects h3::after {
+    margin: 1.5em 0.5em;
+    left: 47%;
+  }
+
+  .project-img img {
+    width: 32em;
+    max-width: 100%;
+  }
+
+  section h3::after {
+    left: 47%;
+  }
+
+  .skills-svg {
+    height: 6em;
+    width: 6em;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .subhead {
+    margin-bottom: 10%;
+  }
+
+  .projects h4 {
+    font-size: 1.5em;
+  }
+
+  section h3::after {
+    left: 48%
+  }
+
+  .projects h3::after {
+    left: 48%;
+  }
+  .show-desktop {
+    display: block;
+  }
+
+  nav .hide-desktop {
+    display: none;
+  }
+
+  #nav {
+    position: inherit;
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    padding-top: 0;
+    float: left;
+  }
+
+  #nav a {
+    background-color: inherit;
+    text-align: right;
+    padding: 1.3em 2em;
+  }
+
+  #nav a:hover {
+    color: #830d0d;
+    border-bottom: 2px solid #830d0d;
+  }
+
+  .active {
+    color: #830d0d;
+    border-bottom: 2px solid #830d0d;
+  }
+
+  .svg {
+    height: 4em;
+    width: 4em;
+  }
+
+  .skills-svg {
+    height: 10em;
+    width: 10em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .resume {
+    width: 20%;
+  }
+
+  .single-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5em;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }    
+
+  .single-project h4 {
+    margin: 0 1.2em;
+    font-size: 1.8em;
+  }
+
+  .project-desc {
+    max-width: 50%;
+    height: 70%;
+    align-items: center;
+  }
+  
+  .project-desc p {
+    font-size: 1em;
+    margin-left: 3em;
+  }
+
+ 
+}
+@media only screen and (min-width: 1600px) {
+  .container {
+    width: 70%;
+  }
 }

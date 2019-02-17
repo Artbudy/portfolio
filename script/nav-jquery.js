@@ -1,11 +1,11 @@
-//Change hamburger to x and show menu
+// Change hamburger to x and show menu
 $(document).ready(function(){
   $('#menu').on('click', function() {
     $(this).toggleClass('change')
     $('#nav').toggleClass('hide-mobile');
 
   });
-  //Scroll to selected section
+  // Scroll to clicked section
   $('.menu-btn').on('click',function() {
     var sectionId = $(this).attr('data-panelId');
     $([document.documentElement, document.body]).animate({
@@ -13,8 +13,13 @@ $(document).ready(function(){
     }, 500);
     $('#menu').removeClass('change');
     $('#nav').addClass('hide-mobile');
+    jQuery('#nav a').removeClass('active');
+    jQuery(this).addClass('active');
     });
+    
 });
+
+
 
 /*
  * Replace all SVG images with inline SVG
