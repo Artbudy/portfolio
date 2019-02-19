@@ -54,7 +54,7 @@ nav .ham-menu {
   text-align: center;
   height: 100%;
   padding-top: 4em;
-  z-index: 15;
+  z-index: 1;
 }
 
 nav a {
@@ -559,9 +559,6 @@ footer {
     height: 10em;
     width: 10em;
   }
-
-  
-
 }
 @media only screen and (min-width: 1300px) {
   .container {
