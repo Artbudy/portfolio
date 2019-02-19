@@ -54,6 +54,7 @@ nav .ham-menu {
   text-align: center;
   height: 100%;
   padding-top: 4em;
+  z-index: 15;
 }
 
 nav a {
@@ -103,7 +104,7 @@ nav a:hover {
 }
 
 section h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -111,6 +112,7 @@ section h3 {
   font-size: 2em;
   text-transform: uppercase;
 }
+
 section h3::after {
   content: "";
   position: absolute;
@@ -121,6 +123,7 @@ section h3::after {
   height: 1px;
   width: 250px;
   background: #fff;
+  z-index: 0;
 }
 
 .top-section img {
@@ -243,8 +246,7 @@ section h3::after {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 0;
-  padding-bottom: 1.3rem;
+  padding: 1.5em .7em;
   margin: 0 auto;
   font-size: 0.8rem;
   max-width: 430px;
@@ -257,8 +259,8 @@ section h3::after {
   color: white;
   background: #474a52;
   border-radius: 1rem;
-  padding: 0.2rem 0.7rem;
-  margin: 0.25rem 0.3rem;
+  padding: 0.3rem 0.7rem;
+  margin: 0.3rem;
 }
 
 .prj-btn {
@@ -295,6 +297,12 @@ footer {
   text-align: center;
   padding: 1.5rem 0.7rem;
 }
+
+.contact-container {
+  text-align: center;
+  padding: 4rem 0.7rem;
+}
+
 /* Contact form */
 #jcf * {
   font-size: 18px;
@@ -308,7 +316,7 @@ footer {
 #jcf {
   max-width: 500px;
 }
-#jcf .error {
+#jcf .email-invalid {
   background-color: rgba(255, 184, 185, 0.8) !important;
   border: solid 1px #d8000c !important;
 }
@@ -381,15 +389,16 @@ footer {
   }
 
   section h1 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .subhead {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   section p {
     font-size: 1.2em;
+    margin-bottom: 0;
   }
 
   .container {
@@ -421,10 +430,6 @@ footer {
 }
 
 @media only screen and (min-width: 875px) {
-  .subhead {
-    margin-bottom: 10%;
-  }
-
   .projects h4 {
     font-size: 1.5em;
   }
@@ -471,29 +476,25 @@ footer {
   }
 
   .svg {
-    height: 4em;
-    width: 4em;
+    height: 3.5em;
+    width: 3.5em;
   }
 
   .skills-svg {
-    height: 10em;
-    width: 10em;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .resume {
-    width: 20%;
+    height: 7em;
+    width: 7em;
   }
 
   .single-project {
     display: flex;
     flex-direction: row;
+    justify-items: space-between;
     justify-content: center;
     padding-bottom: 5em;
   }
+
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }    
 
@@ -504,7 +505,7 @@ footer {
 
   .project-desc {
     max-width: 50%;
-    height: 70%;
+    height: 100%;
     align-items: center;
   }
   
@@ -512,11 +513,99 @@ footer {
     font-size: 1em;
     margin-left: 3em;
   }
-
- 
 }
-@media only screen and (min-width: 1600px) {
+
+@media only screen and (min-width: 1024px) {
+  .resume {
+    width: 20%;
+  }
   .container {
+    width: 80%;
+  }
+
+  .top-container h1 {
+    font-size: 3.2em;
+  }
+
+  .subhead {
+    font-size: 1.1em;
+    margin-bottom: 10%;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .top-img {
+    display: flex;
+  }
+
+  .top-img img {
+    width: 20em;
+    height: 20em;
+  }
+ 
+  .top-description {
     width: 70%;
+    margin: 1.5em 0 1.5em 1em;
+    
+  }
+  
+  .skills-svg {
+    height: 10em;
+    width: 10em;
+  }
+
+  
+
+}
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+
+  .top-img img {
+    width: 25em;
+    height: 25em;
+  }
+
+  .top-description h1 {
+    font-size: 4.5em;
+  }
+
+  .subhead {
+    font-size: 1.5em;
+  }
+
+  .svg {
+    height: 4em;
+    width: 4em;
+  }
+
+  section h3::after {
+    left: 49%
+  }
+
+  .projects h3::after {
+    left: 49%;
+  }
+
+  .project-desc h4 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .top-img img {
+    width: 30em;
+    height: 30em;
+  }
+
+  .top-description h1 {
+    font-size: 5em;
   }
 }

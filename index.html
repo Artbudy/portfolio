@@ -27,23 +27,30 @@
     </header>
     <main>
         <section class="top-section" id="section1">
-            <div class="container">   
-                <div>
-                    <img src="images/photo-me-1.jpg" alt="Photo of me.">
-                    <h1 id="name">Arturas Budrikas</h1>
-                    <p class="subhead">Front-end UX developer based in Ireland</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Artbudy">
-                        <img class="svg" src="images/iconmonstr-github-1.svg" alt="Github account"></a>
-                        <a href="https://www.linkedin.com/in/arturas-budrikas/">
-                        <img class="svg" src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn account"></a>
-                        <a href="mailto:arthurbud993@gmail.com?subject=job-offer">
-                        <img class="svg" src="images/iconmonstr-email-9.svg" alt="Email"></a>
+            <div class="container">
+                <div class="top-container">
+                    <div class="top-img"> 
+                        <img src="images/photo-me-1.jpg" alt="Photo of me.">
+                    </div>
+                    <div class="top-description">
+                        <h1 id="my-name">Arturas Budrikas</h1>
+                        <p class="subhead">Junior front-end/UX developer based in Ireland.<br>
+                            Computer Science IT Managment 2nd year student.</p>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Artbudy">
+                            <img class="svg" src="images/iconmonstr-github-1.svg" alt="Github account"></a>
+                            <a href="https://www.linkedin.com/in/arturas-budrikas/">
+                            <img class="svg" src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn account"></a>
+                            <a href="mailto:arthurbud993@gmail.com?subject=job-offer">
+                            <img class="svg" src="images/iconmonstr-email-9.svg" alt="Email"></a>
+                        </div>
+                    
+                        <a href="CV/CV Arturas Budrikas.pdf" download="Arturas-Budrikas-resume.pdf">
+                            <button class="resume">Resume</button>
+                        </a>
                     </div>
                 </div>
-                <a href="CV/CV Arturas Budrikas.pdf" download="Arturas-Budrikas-resume.pdf">
-                    <button class="resume">Resume</button>
-                </a>
             </div>
         </section>
         
@@ -51,7 +58,7 @@
             <div class="container">  
 
                 <h3>Projects</h3>
-                <p>Check out my projects.</p>
+                <p><strong>Check out my projects.</strong></p>
                 <div class="project-container">
                     <div class="single-project">
                         <div class="project-img">
@@ -122,21 +129,20 @@
         </section>
 
         <section class="contacts" id="section4">
-            <div class="container">
+            <div class="contact-container">
                 <div>
                     <h3>Contact</h3>
                     <div id="jcf">
                         <form class="gform"action="https://script.google.com/macros/s/AKfycbxwtu__RbzHdEESK-vyRdf85BIp0goupxeX52nYajg83IiUh-X9/exec" method="post" id="contact_form">
                             <input class="contact_name" type="text" name="name" id="name" placeholder="Name"/> 
-                            <input class="contact_email" type="email" name="email" id="email" placeholder="Email" /> 
-                            <input id="honeypot" type="text" name="honeypot" value="">
+                            <input class="contact_email" type="email" name="email" id="email" placeholder="Email"/> 
                             <input class="contact_subject" type="text" name="subject" id="subject" placeholder="Subject" /> 
-                            <textarea class="contact_message" name="message" id="message" placeholder="Write your message..."></textarea> 
+                            <textarea class="contact_message" name="message" id="message" placeholder="Write your message..."></textarea>
+                            <input id="honeypot" type="text" name="honeypot" value="">
                             <button class="submit" type="submit" id="send_message" style="height: 43px;">Send Message</button> 
                             <div style="display:none" class="thankyou_message">
                             <!-- Thank you message -->
-                            <h2><em>Thank you!</em> I will get back to you soon!
-                            </h2>
+                            <h2><em>Thank you! </em> I will get back to you soon!</h2>
                             </div>
                         </form>
                     </div>
