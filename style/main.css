@@ -423,6 +423,10 @@ footer {
     left: 47%;
   }
 
+  .slills-icons {
+    margin-top: 5em;
+  }
+
   .skills-svg {
     height: 6em;
     width: 6em;
@@ -520,7 +524,7 @@ footer {
     width: 20%;
   }
   .container {
-    width: 80%;
+    width: 90%;
   }
 
   .top-container h1 {
@@ -562,8 +566,14 @@ footer {
 }
 @media only screen and (min-width: 1300px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
+
+  .skills-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
 
   .top-img img {
     width: 25em;
@@ -604,5 +614,8 @@ footer {
 
   .top-description h1 {
     font-size: 5em;
+  }
+  .container {
+    width: 70%;
   }
 }

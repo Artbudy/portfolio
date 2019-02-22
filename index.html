@@ -20,7 +20,7 @@
                 <div class="change bar3"></div>
             </div>
             <div class="show-desktop hide-mobile" id="nav">
-                <a class="menu-btn" data-panelId="section1" href="#">home</a>
+                <a class="menu-btn active" data-panelId="section1" href="#">home</a>
                 <a class="menu-btn" data-panelId="section2" href="#">projects</a>
                 <a class="menu-btn" data-panelId="section3" href="#">skills</a>
                 <a class="menu-btn" data-panelId="section4" href="#">contact</a>
@@ -137,7 +137,8 @@
                     <div id="jcf">
                         <form class="gform"action="https://script.google.com/macros/s/AKfycbxwtu__RbzHdEESK-vyRdf85BIp0goupxeX52nYajg83IiUh-X9/exec" method="post" id="contact_form">
                             <input class="contact_name" type="text" name="name" id="name" placeholder="Name"/> 
-                            <input class="contact_email" type="email" name="email" id="email" placeholder="Email"/> 
+                            <input class="contact_email" type="email" name="email" id="email" value="" required placeholder="your.name@email.com"/>
+                            <span class="email-invalid" style="display:none">Must be a valid email address</span>
                             <input class="contact_subject" type="text" name="subject" id="subject" placeholder="Subject" /> 
                             <textarea class="contact_message" name="message" id="message" placeholder="Write your message..."></textarea>
                             <input id="honeypot" type="text" name="honeypot" value="">
